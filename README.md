@@ -1,7 +1,7 @@
 # What is a Time Series An introduction for business analysts
 
-**Published:** 2024-09-10
-**Medium:** [https://medium.com/@kyle-t-jones/what-is-a-time-series-an-introduction-for-business-analysts-303e8e1fedd8](https://medium.com/@kyle-t-jones/what-is-a-time-series-an-introduction-for-business-analysts-303e8e1fedd8)
+Published: 2024-09-10
+Medium: [https://medium.com/@kyle-t-jones/what-is-a-time-series-an-introduction-for-business-analysts-303e8e1fedd8](https://medium.com/@kyle-t-jones/what-is-a-time-series-an-introduction-for-business-analysts-303e8e1fedd8)
 
 ## About
 

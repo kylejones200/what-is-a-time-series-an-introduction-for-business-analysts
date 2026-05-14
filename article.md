@@ -13,7 +13,7 @@ There are two main approaches to forecasting: qualitative and quantitative. Qual
 
 In contrast, quantitative forecasting uses mathematical formulas and models applied to data to predict future values. This is the focus of the discussion, rather than the more subjective qualitative methods.
 
-#### **Components of Time Series**
+#### Components of Time Series
 When examining a time series, it is useful to break down the data into its core components.
 
 1.  [Trend: The overall direction of the data, whether it is increasing, decreasing, or staying relatively flat over time. A time series may exhibit an upward trend, a downward trend, or no clear trend at all (a flat or stationary series).]
@@ -48,7 +48,7 @@ In this example, we first create a \`DatetimeIndex\` object using the \`pd.date_
 
 The resulting \`ts\` variable is a \`pandas.Series\` object, which has the following properties:
 
-**Index:** The dates representing the temporal ordering of the observations.\ **Values:** The actual data points, which can be numeric, categorical, or a mix of data types.
+Index: The dates representing the temporal ordering of the observations. Values: The actual data points, which can be numeric, categorical, or a mix of data types.
 
 Once the data is in this time series format, we can begin to analyze the components and characteristics of the data, such as trend, seasonality, and stationarity.
 
@@ -101,10 +101,10 @@ The specific modeling approach chosen will depend on the characteristics of the 
 
 Time series modeling and forecasting is fun and has many applications. Here is an example project I've done with forecasting.
 
-[**Time Series forecasting of natural gas prices with Python**\ *A common task in finance is forecasting values. There are several methods for creating forecasts such as ARIMA...*medium.com](https://medium.com/@kylejones_47003/time-series-forecasting-of-natural-gas-prices-with-python-b21c0d11019d "https://medium.com/@kylejones_47003/time-series-forecasting-of-natural-gas-prices-with-python-b21c0d11019d")[](https://medium.com/@kylejones_47003/time-series-forecasting-of-natural-gas-prices-with-python-b21c0d11019d)
+[Time Series forecasting of natural gas prices with Python *A common task in finance is forecasting values. There are several methods for creating forecasts such as ARIMA...*medium.com](https://medium.com/@kylejones_47003/time-series-forecasting-of-natural-gas-prices-with-python-b21c0d11019d "https://medium.com/@kylejones_47003/time-series-forecasting-of-natural-gas-prices-with-python-b21c0d11019d")[](https://medium.com/@kylejones_47003/time-series-forecasting-of-natural-gas-prices-with-python-b21c0d11019d)
 #### Reflection Questions
-1.  [**How can you define the changes happening in a given time series?** By identifying the trend, seasonality, and stationarity of the data, you can describe the overall changes and patterns occurring in the time series.]
-2.  [**What are the implications of trend and seasonality in time series data?** Trend and seasonality have important implications for forecasting, decision-making, and understanding the underlying factors driving the data. Trend can indicate long-term growth or decline, while seasonality can help identify recurring patterns that may influence business operations, planning, and strategy.]
+1.  [How can you define the changes happening in a given time series? By identifying the trend, seasonality, and stationarity of the data, you can describe the overall changes and patterns occurring in the time series.]
+2.  [What are the implications of trend and seasonality in time series data? Trend and seasonality have important implications for forecasting, decision-making, and understanding the underlying factors driving the data. Trend can indicate long-term growth or decline, while seasonality can help identify recurring patterns that may influence business operations, planning, and strategy.]
 
 ### Related Stories
 - [[ARIMA Models and Time Series Forecasting for Business Analytics](https://medium.com/@kylejones_47003/arima-models-and-time-series-forecasting-for-business-analytics-97c5c870e9c6)]
