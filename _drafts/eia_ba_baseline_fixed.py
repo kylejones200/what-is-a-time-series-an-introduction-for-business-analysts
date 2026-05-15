@@ -1,23 +1,21 @@
-import signalplot
+import logging
+from dataclasses import dataclass
+from pathlib import Path
+
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-from pathlib import Path
-from dataclasses import dataclass
-from sklearn.model_selection import TimeSeriesSplit
+import signalplot
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
+from sklearn.model_selection import TimeSeriesSplit
 
-import logging
 logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s'
+    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
 )
 logger = logging.getLogger(__name__)
 np.random.seed(42)
-signalplot.apply(font_family='serif')
-
-
+signalplot.apply(font_family="serif")
 
 
 @dataclass
@@ -27,25 +25,29 @@ class Config:
     horizon: int = 12
     n_splits: int = 5
 
-def load_config(config_path=None) -> 'Config':
+
+def load_config(config_path=None) -> "Config":
     """Build Config from config.yaml, falling back to dataclass defaults."""
     if config_path is None:
-        config_path = Path(__file__).parent / 'config.yaml'
+        config_path = Path(__file__).parent / "config.yaml"
     if not config_path.exists():
         return Config()
     with open(config_path) as _f:
         import yaml as _yaml
-        raw = _yaml.safe_load(_f) or {}
-    _d = raw.get('data', {})
-    _m = raw.get('model', {})
-    _o = raw.get('output', {})
-    return Config(
-        csv_path=_d.get('input_file', '2001-2025 Net_generation_United_States_all_sectors_monthly.csv'),
-        freq=_d.get('freq', 'MS'),
-        horizon=_m.get('horizon', 12),
-        n_splits=_d.get('n_splits', 5),
-    )
 
+        raw = _yaml.safe_load(_f) or {}
+    _d = raw.get("data", {})
+    _m = raw.get("model", {})
+    _o = raw.get("output", {})
+    return Config(
+        csv_path=_d.get(
+            "input_file",
+            "2001-2025 Net_generation_United_States_all_sectors_monthly.csv",
+        ),
+        freq=_d.get("freq", "MS"),
+        horizon=_m.get("horizon", 12),
+        n_splits=_d.get("n_splits", 5),
+    )
 
 
 def load_series(cfg: Config) -> pd.Series:
