@@ -10,9 +10,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_absolute_error
 from sklearn.model_selection import TimeSeriesSplit
 
-logging.basicConfig(
-    level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s"
-)
+logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 logger = logging.getLogger(__name__)
 np.random.seed(42)
 signalplot.apply(font_family="serif")
@@ -98,7 +96,6 @@ def main(plot: bool = False):
     y = load_series(cfg)
     mean_mae, y_true, y_pred = rolling_origin_linear(y, cfg)
     logger.info(f"Linear calendar baseline mean MAE: {mean_mae}")
-
     if plot:
         plt.figure(figsize=(9, 4))
         plt.plot(y.index, y.values, label="history", alpha=0.6)

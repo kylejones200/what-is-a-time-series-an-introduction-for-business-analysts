@@ -1,6 +1,5 @@
 # Description: Short example for What is a Time Series An introduction for business analysts.
 
-
 # Sample data
 
 import matplotlib.pyplot as plt
@@ -37,7 +36,6 @@ def main():
     ]
     # Convert to a pandas Series
     ts = pd.Series(values, index=dates)
-
     plt.figure(figsize=(12, 6))
     plt.plot(ts)
     plt.title("Time Series of Daily Values")
