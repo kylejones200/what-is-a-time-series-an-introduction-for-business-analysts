@@ -11,14 +11,7 @@ The distinguishing characteristic of time series data is the *temporal order of 
 
 There are two main approaches to forecasting: qualitative and quantitative. Qualitative forecasting involves gathering experts together and relying on their subjective opinions and experiences. For example, they might say that whenever there's a Super Bowl and the average temperature is high, and crickets are chirping 10 times a minute, they normally think a certain outcome will occur. This type of qualitative forecasting can be accurate over time as experts develop their intuition, but it is difficult to replicate.
 
-## About
 
-Place the code for this article in this repository.
-The original article export is saved as `article.md`.
-
-## Files
-
-Add your `.ipynb`, `.py`, `.yaml`, `.js`, `.ts`, or other project files here.
 
 ## Disclaimer
 
